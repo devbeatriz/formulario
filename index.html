@@ -12,7 +12,66 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div id="app">
+    <main>
+      <form class="form">
+        <h1>Envie uma mensagem
+          <span>Icon</span>
+        </h1>
 
+        <div class="form__inputs">
+
+          <label id="label-name">
+            Nome completo
+            <input 
+            type="text"
+            name="name"
+            placeholder="Digite seu nome"
+            >
+          </label>
+
+          <label id="label-email">
+            Endereço e e-mail
+            <input 
+            type="text"
+            name="email"
+            placeholder="email@email.com"
+            >
+          </label>
+
+          <label id="label-phone">
+            Telefone
+            <input 
+            type="text"
+            name="phone"
+            placeholder="(99) 98800-0011"
+            >
+          </label>
+
+          <label id="label-company">
+            Nome da empresa
+            <input 
+            type="text"
+            name="company"
+            placeholder="Digite o nome da empresa"
+            >
+          </label>
+
+          <label id="label-message">
+            Mensagem
+            <input 
+            type="text"
+            name="message"
+            placeholder="Digite sua mensagem"
+            >
+          </label>      
+        </div>
+
+        <button>Enviar</button>
+
+      </form>
+    </main>
+  </div>
   <script src="scripts/index.js"></script>
 </body>
 </html>
