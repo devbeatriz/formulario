@@ -16,7 +16,9 @@
     <main>
       <form class="form">
         <h1>Envie uma mensagem
-          <span>Icon</span>
+          <svg stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#3e3e3e" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path>
+          </svg>
         </h1>
 
         <div class="form__inputs">
@@ -27,6 +29,7 @@
             type="text"
             name="name"
             placeholder="Digite seu nome"
+            onblur="blurInput(this)"
             >
           </label>
 
@@ -36,6 +39,7 @@
             type="text"
             name="email"
             placeholder="email@email.com"
+            onblur="blurInput(this)"
             >
           </label>
 
@@ -45,6 +49,7 @@
             type="text"
             name="phone"
             placeholder="(99) 98800-0011"
+            onblur="blurInput(this)"
             >
           </label>
 
@@ -54,6 +59,7 @@
             type="text"
             name="company"
             placeholder="Digite o nome da empresa"
+            onblur="blurInput(this)"
             >
           </label>
 
@@ -63,11 +69,17 @@
             type="text"
             name="message"
             placeholder="Digite sua mensagem"
+            onblur="blurInput(this)"
             >
           </label>      
         </div>
 
-        <button>Enviar</button>
+        <button>
+          Enviar
+          <svg stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#EDF1F7" d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path>
+          </svg>
+        </button>
 
       </form>
     </main>
